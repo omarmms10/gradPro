@@ -1,0 +1,175 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family:sans-serif;
+    background-color: #f0f0f0;
+    
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensure the header is above other content */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+
+/* Hide submenus initially */
+#foodPreferencesSubmenu,
+#exercisePreferencesSubmenu {
+    display: none;
+}
+
+/* Sidebar styles */
+aside {
+    background-color: #2f2d2d;
+    color: #fff;
+    padding: 20px;
+    width: 200px;
+    position: fixed;
+    top: 70px;
+    bottom: 0px;
+    /* Adjusted positioning to take full height */
+    right: 0;
+    /* Positioning the sidebar on the right side */
+    overflow-y: auto;
+    /* Enable vertical scrolling if content exceeds height */
+    display: flex;
+    /* Use flexbox */
+    flex-direction: column;
+    transition: right 0.3s ease;
+}
+
+.sidebar-visible {
+    right: 0;
+}
+
+/* Styling the toggle button */
+#toggleSidebarBtn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+aside button {
+    display: block;
+    background-color: #666;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+aside button:hover {
+    background-color: orange;
+}
+
+/* Styles for the sub-menu buttons */
+.submenu-btn {
+    padding: 8px;
+    /* Smaller padding */
+    font-size: 0.9em;
+    /* Smaller font size */
+}
+
+/* Styles for links */
+.submenu-link {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 20px;
+    /* Adjust border radius to change the shape */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.submenu-link:hover {
+    background-color: orange;
+    border-color: #333;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    /* Align icons vertically */
+    align-items: center;
+    /* Center items horizontally */
+    margin-top: auto;
+    font-size:24px;
+}
+
+.social-icons-row {
+    display: flex;
+}
+
+.social-icons-row a {
+    margin: 0 8px;
+    /* Adjust spacing between icons */
+}
+
+
+
+/* Main content styles */
+main {
+    margin-left: 220px;
+    /* Sidebar width + some padding */
+    padding: 20px;
+    padding-bottom: 200px;
+}
+
+
+.contact-btn {
+    display: block;
+        background-color: #666;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-align: center;
+}
+
+.contact-btn:hover {
+    background-color: orange;
+    /* Darker shade of blue on hover, you can change it */
+}
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./profileHome.css">
+    <link rel="stylesheet" href="resultHome.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <h1>Set Nutrition Target</h1>
+    <h2>Take a look at the daily nutrition targets we've estimated for you based on your profile. <br><br> You can
+        adjust the targets later on your meal planner page.</h2>
+    <h1>My Nutrition Targets</h1>
+    <div id="chartContainer">
+        <canvas id="myPieChart" width="400" height="400"></canvas>
+    </div>
+    <div id="totalCalories"></div> <!-- Separate div for displaying total calories -->
+    <br><br>
+    <button id="saveChangesBtn" type="submit">Save Changes</button> <!-- Added Save Changes button -->
+
+    <script src="./profileHome.js"></script>
+    <script src="resultHome.js"></script>
+</body>
+
+</html>

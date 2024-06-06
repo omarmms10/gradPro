@@ -1,0 +1,60 @@
+/* Results page styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #181A1F;
+    /* Fun and Calm Gradient */
+    color: #0b0b0b;
+    padding: 50px;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    color: orange;
+
+
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #ece9e9;
+    margin: 20px 0;
+    text-align: center;
+}
+
+p {
+    font-size: 28px;
+    color: #ece9e9;
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+#chartContainer {
+    flex: 0 0 50%;
+    padding-right: -40px;
+    color: orange;
+}
+
+
+/* Button styles with animation */
+#saveChangesBtn {
+    background: orange;
+    padding: 12px 24px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#saveChangesBtn:hover {
+    background: rgb(244, 174, 45);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}

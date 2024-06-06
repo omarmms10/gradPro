@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <title>Sign Up</title>
+</head>
+
+<body>
+<div class="container">
+    <div class="content">
+        <h1>HLHB</h1>
+        <p class="ppS">Get the full HLHB experience for </p>
+        <h3>$0 today</h3>
+        <h2><strong>$5 USD per weak</strong>, billed Monthly at <strong>$10/Month</strong> after your 2-day free
+        trial.</h2>
+        <p class="pS">Cancel anytime.</p>
+        <div class="apps">
+            <div>
+                <a href="https://itunes.apple.com/app/apple-store" target="_blank">
+                    <img id="get-ios" class="download-logo"
+                        src="https://www.jefit.com/uc/file/1113e9a3aef81d01/wp_app_store_logo.png">
+                </a>
+            </div>
+            <div>
+                <a href="https://play.google.com/store/apps" target="_blank">
+                    <img id="get-an" class="download-logo"
+                        src="https://www.jefit.com/uc/file/c2d4bb725b308492/wp_google_play_logo.png">
+                </a>
+            </div>
+        </div>
+
+    </div>
+<div class="signup-container">
+    <h1>CREATE ACCOUNT</h1>
+        <p class="login-link">Already have an account?
+            <a class="linkOra" href="login.html">Login</a>
+        </p>
+    <form id="signup-form">
+        <div class="input-container">
+                <input type="text" id="firstname" name="firstname" placeholder="User Name" required>
+            </div>
+            <div class="input-container">
+                <select id="country" name="country" required>
+                    <option value="" disabled selected>Your Country</option>
+                </select>
+            </div>
+            <hr>
+            <div class="input-container">
+                <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+            <hr>
+            <div class="input-container">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <hr>
+            <div class="input-container">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <span class="toggle-password" id="toggle-password">
+                    <i class="far fa-eye-slash"></i>
+                </span>
+            </div>
+            <hr>
+            <div class="input-container">
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+                <div class="toggle-password" id="toggle-confirm-password">
+                    <i class="far fa-eye-slash"></i>
+                </div>
+            </div>
+
+
+            <p class="error-message" id="error-message"></p>
+            <button type="submit" class="rounded-button">Create Account</button>
+            <p class="or-continue-with">Or continue with</p>
+            <div class="social-icons">
+                <i class="fab fa-google"></i>
+                <i class="fab fa-apple"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fi fi-brands-instagram"></i>
+            </div>
+            <p class="pEnd">By signing up, you agree to the HLHB <br> <a href="./termsOfServices.html">Terms of Use</a>
+                 and <a href="./privacyPolicy.html">Privacy Policy</a>. <br> We respect and protect your information and
+            privacy.</p>
+    </form>
+</div>
+</div>
+
+</body>
+<script src="signup.js"></script>
+
+</html>

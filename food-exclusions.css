@@ -1,0 +1,182 @@
+body {
+    font-family: sans-serif;
+    background: rgb(79, 77, 77);
+    color: #333;
+    padding: 20px;
+    margin: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+body:hover {
+    transform: scale(1.01);
+}
+
+h1 {
+    font-size: 28px;
+    color: orange;
+    text-transform: uppercase;
+    margin: 20px 0;
+    letter-spacing: 1px;
+    transition: transform 0.5s ease-in-out;
+}
+
+h1:hover {
+    transform: translateY(-5px);
+}
+
+.rand {
+    font-size: 18px;
+    color: #e9dede;
+    transition: color 0.3s ease-in-out;
+}
+
+.checkbox-container {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.checkbox-container:hover {
+    transform: translateY(-5px);
+}
+
+.checkbox-container input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox {
+    height: 25px;
+    width: 150px;
+    background-color: #fff;
+    border: 1px solid rgb(181, 181, 181);
+    cursor: pointer;
+    border-radius: 2.5rem;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #161515;
+    font-size: 18px;
+    padding: 5px;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-checkbox:hover {
+    transform: translateY(-3px);
+}
+
+.custom-checkbox.checked {
+    background-color: #eeeff2;
+    transition: background-color 0.3s ease-in-out;
+}
+
+h1.hlink {
+    font-size: 24px;
+    color: orange;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+h1.hlink:hover {
+    transform: translateY(-5px);
+}
+
+#toggle-section {
+    color: orange;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+#toggle-section:hover {
+    transform: translateY(-5px);
+}
+
+.rightArr-logo {
+    width: 10px;
+    height: 10px;
+    margin-bottom: -1px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.rightArr-logo:hover {
+    transform: translateX(3px);
+}
+
+/* Button styles with animation */
+button {
+    background: orange;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background: rgb(233, 161, 27);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.continue-logo {
+    width: 10px;
+    height: 10px;
+    margin-right: 0;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.continue-logo:hover {
+    transform: translateY(-3px);
+}
+
+.hidden-section {
+    display: none;
+}
+#sticker-image {
+    display: none;
+    /* Initially hide the image */
+    width: 200px;
+    /* Set the width to your desired size */
+    height: auto;
+    /* Maintain aspect ratio */
+    position: absolute;
+    right: 60%;
+    z-index: 1;
+    animation: moveRight 2s infinite alternate;
+    }
+    
+    @keyframes moveRight {
+        from {
+            right: 300px;
+            /* Start position */
+        }
+    
+        to {
+            right: 700px;
+            /* End position */
+        }
+    }
+/* Responsive design for mobile screens */
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .custom-checkbox {
+        width: 115px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+@media screen and (min-width: 767px) {
+    body{
+        margin-left: 20%;
+    }
+}

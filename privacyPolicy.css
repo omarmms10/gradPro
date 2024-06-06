@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.secPri {
+    margin-bottom: 20px;
+}
+
+.h2Pri {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.ulPri {
+    list-style-type: none;
+    padding: 0;
+}
+
+.liPri {
+    margin-bottom: 5px;
+}

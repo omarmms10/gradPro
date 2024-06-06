@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+
+<body>
+    <div class="account-container">
+        <div class="user-info">
+            <br> <br>
+            <div class="profile-pic">
+                <label for="profile-pic-input">
+                    <img src="default_profile_pic.jpg" alt="Profile Picture" id="profile-pic-display">
+                    
+                </label>
+                <!-- Hidden input field for profile picture upload -->
+                <input type="file" accept="image/*" id="profile-pic-input" style="display: none;">
+            </div>
+            <div class="user-details">
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> johndoe@example.com</p>
+                <p><strong>Sex:</strong> Male</p>
+                <div class="weight-height">
+                    <p><strong>Weight:</strong> 75 kg</p>
+                    <p><strong>Height:</strong> 180 cm</p>
+                </div>
+                <p><strong>Body Fat:</strong> 20%</p>
+                <p><strong>Activity Level:</strong> Moderate</p>
+                <p><strong>Goal:</strong> Lose Weight</p>
+            </div>
+        </div>
+        <div class="edit-profile-link">
+            <a href="#" id="edit-profile-link">Edit your profile info</a>
+        </div>
+    </div>
+
+    <script src="account.js"></script>
+</body>
+
+</html>

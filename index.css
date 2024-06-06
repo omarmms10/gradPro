@@ -1,0 +1,79 @@
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+
+ .cover-image {
+     background-image: url('./imgs/index/sawyer-bengtson-ltc4dxneezu-unsplash-edit.jpg');
+     background-size: cover;
+     background-position: center;
+     height: 700px;
+     /* Adjust the height as needed */
+     display: flex;
+     flex-direction: column;
+     align-items: last baseline;
+     /* Align items to the left */
+     justify-content: center;
+     color: #110000;
+     text-align: right;
+     /* Align text to the left */
+     padding: 0 20px 0 20px;
+     /* Add padding to both sides */
+     font-family: 'Arial', sans-serif;
+    transition: opacity 0.4s ease-in-out;
+     /* Choose a professional font family */
+ }
+
+ .cover-image h1,
+ .cover-image p,
+ .cover-image button {
+     margin: 0;
+     /* Remove default margins for consistent alignment */
+ }
+
+ .cover-image h1 {
+     font-size: 36px;
+     /* Increase font size for heading */
+     font-family: var(--wp--preset--font-family--inter);
+     font-style: normal;
+     font-weight: 600;
+     /* Add bold font weight for emphasis */
+ }
+
+ .cover-image p {
+     font-size: 18px;
+     /* Increase font size for paragraph */
+     line-height: 2.5;
+     /* Improve line spacing for readability */
+ }
+
+ .cover-image button {
+     margin-top: 10px;
+     /* Add margin-top for spacing between paragraph and button */
+     padding: 12px 24px;
+     font-size: 16px;
+     /* Set a reasonable font size for the button */
+     background-color: orange;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s ease, color 0.3s ease;
+     /* Adding transition for a smooth color change */
+ }
+
+ .cover-image button:hover {
+     background-color: #fff;
+     color: orange;
+ }
+
+ /* Add this class to style the selected link */
+ .selected-link {
+     color: orange;
+     /* White text for the selected link */
+ }
+
+ 

@@ -1,0 +1,207 @@
+/* Page styles with hover effect and background gradient */
+body {
+    font-family:sans-serif;
+    background: rgb(79, 77, 77);
+    /* Green Gradient */
+    color: #333;
+    padding: 20px;
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+
+body:hover {
+    transform: scale(1.01);
+}
+.container {
+    display: flex;
+    align-items: center;
+    /* Center vertically */
+}
+
+
+.image-container {
+    margin-left: 20px;
+    margin-bottom: 200px;
+    /* Adjust spacing between form and image */
+}
+
+.image-container img {
+    max-width: 200%;
+    /* Ensure the image doesn't exceed container width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+form {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #f1f3f3, #f3daf9);
+    /* Fun and Calm Gradient */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-20px);
+    animation: slideIn 0.5s ease-in-out;
+    padding: 20px;
+}
+
+/* Add space between elements */
+form label {
+    display: block;
+    margin: 15px 0;
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Input and select elements */
+input[type="text"],
+input[type="number"],
+select {
+    width: 90%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transform: translateX(-10px);
+    transition: transform 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    transform: translateX(0);
+}
+
+/* Button styles with animation */
+button {
+    background: orange;
+    /* Vibrant Orange */
+    padding: 12px 24px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background: rgb(229, 162, 37);
+    /* Darker Red */
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+/* Title styling with hover effect */
+h1 {
+    text-align: center;
+    color: orange;
+    /* Vibrant Orange */
+    text-transform: uppercase;
+    font-size: 36px;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    transform: translateY(-20px);
+    transition: transform 0.5s ease-in-out;
+}
+
+h1:hover {
+    transform: translateY(0);
+}
+
+/* Radio label style with hover effect and animation */
+.radio-label {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    padding: 12px;
+    border: 2px solid orange;
+    /* Vibrant Orange */
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    background: #fff;
+    color: #333;
+    transition: background 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+}
+
+input[type="radio"]+label.radio-label {
+    background: #fff;
+    color: #333;
+}
+
+input[type="radio"]:checked+label.radio-label {
+    background: orange;
+    /* Vibrant Orange */
+    color: #fff;
+}
+
+.radio-label:hover {
+    background: rgb(182, 127, 26);
+    /* Darker Red */
+    color: #fff;
+}
+
+/* Styling for other elements with animation */
+#Genders,
+#Goals,
+#Fats {
+    display: flex;
+    flex-direction: column;
+    background: #e0e0e0;
+    /* Light Gray */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-20px);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Style the p and label elements without a specific class */
+p,
+label {
+    font-size: 18px;
+    color: #010101;
+    margin: 10px 0;
+    text-align: center;
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+p{
+    color: white;
+}
+#hidden-paragraph-fats{
+    color: black;
+}
+p:hover,
+label:hover {
+    color: rgb(225, 165, 52);
+    /* Vibrant Orange */
+}
+input[type="radio"] {
+    display: none;
+    /* Hide the actual radio buttons */
+}
+/* Center the text inside input and select elements */
+input[type="text"],
+input[type="number"],
+select {
+    text-align: center;
+}
+
+
+.icon-link {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.ques-logo {
+    width: 24px;
+    /* Adjust the size as needed */
+    height: 24px;
+    /* Adjust the size as needed */
+}
+/* Add more specific styling, animations, or tricks as needed. */

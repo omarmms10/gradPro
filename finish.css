@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #edc0de, #444434);
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    animation: fadeIn 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.welcome-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+    animation: fadeIn 0.5s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    transform: translateY(-20px);
+}
+
+.welcome-container img {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0 0 20px;
+    animation: slideInDown 0.5s ease-in-out;
+}
+
+p {
+    margin: 20px 0;
+    animation: slideInRight 0.5s ease-in-out;
+}
+
+.rounded-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f86a3e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    /* Remove the default link underline */
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.rounded-button:hover {
+    background-color: #f44336;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+

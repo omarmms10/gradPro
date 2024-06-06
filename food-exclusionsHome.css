@@ -1,0 +1,136 @@
+body {
+    font-family: sans-serif;
+    background-color: #181A1F;
+    color: #333;
+    padding: 40px;
+    margin: 0;
+    margin-right: 200px;
+}
+
+
+
+h1 {
+    font-size: 28px;
+    color: orange;
+    text-transform: uppercase;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+
+
+.rand {
+    font-size: 18px;
+    color: #e9dede;
+}
+
+.checkbox-container {
+    display: inline-block;
+}
+
+
+
+.checkbox-container input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox {
+    height: 25px;
+    width: 150px;
+    background-color: #fff;
+    border: 1px solid rgb(181, 181, 181);
+    cursor: pointer;
+    border-radius: 2.5rem;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #161515;
+    font-size: 18px;
+    padding: 5px;
+
+}
+
+
+.custom-checkbox.checked {
+    background-color: #eeeff2;
+}
+
+h1.hlink {
+    font-size: 24px;
+    color: orange;
+
+}
+
+
+
+#toggle-section {
+    color: orange;
+
+}
+
+
+
+.rightArr-logo {
+    width: 10px;
+    height: 10px;
+    margin-bottom: -1px;
+
+}
+
+
+
+/* Button styles with animation */
+#saveChangesBtn {
+    background: orange;
+    padding: 12px 24px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#saveChangesBtn:hover {
+    background: rgb(244, 174, 45);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.continue-logo {
+    width: 10px;
+    height: 10px;
+    margin-right: 0;
+
+}
+
+
+.hidden-section {
+    display: none;
+}
+
+
+
+
+/* Responsive design for mobile screens */
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .custom-checkbox {
+        width: 115px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    body {
+        margin-left: 20%;
+    }
+}

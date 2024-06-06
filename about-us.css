@@ -1,0 +1,90 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+.titleH1{
+    margin-left: 200px;
+    font-size: 50px;
+}
+.hTeam {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member img {
+    width: 200px;
+    /* Set a fixed width */
+    height: 200px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Resize the image to cover the specified dimensions */
+    border-radius: 50%;
+    /* Make the image round */
+}
+
+.team-member h2 {
+    margin: 10px 0;
+}
+
+.team-member p {
+    color: #555;
+}
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .column {
+      flex: 1;
+      padding: 10px;
+            /* Adjust this value to control the width of each column */
+    }
+    #hh{
+        margin-top: 150px;
+    }
+
+    .column img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .section {
+      padding: 20px 0;
+    margin-left: 30%;
+        /* Adjust the margin as needed */    }
+#aboutH1{
+    font-size: 40px;
+    font-family: serif;
+}
+#aboutP{
+    font-size: 22px;
+    word-spacing: 1px;
+    line-height:1.5;
+    font-family:serif;
+}

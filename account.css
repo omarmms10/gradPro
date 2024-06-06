@@ -1,0 +1,67 @@
+/* Styles for the account page */
+.account-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile-pic {
+    margin-right: 20px;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.upload-overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.upload-overlay:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.user-details {
+    flex: 1;
+}
+
+.user-details p {
+    margin: 5px 0;
+}
+
+.weight-height {
+    display: flex;
+}
+
+.weight-height p {
+    margin-right: 20px;
+}
+
+.edit-profile-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.edit-profile-link a {
+    text-decoration: none;
+    color: #007bff;
+}

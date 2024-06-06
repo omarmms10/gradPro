@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="./uicons-brands/css/uicons-brands.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>LOG IN</h1>
+        <form id="login-form">
+            <div class="input-container">
+                <i class="far fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="Email or Username" required>
+            </div>
+            <div class="input-container">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <span class="toggle-password" id="toggle-password">
+                    <i class="far fa-eye-slash"></i>
+                </span>
+            </div>
+            <div class="input-container">
+                <label for="remember-me">Remember me</label>
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+            <p class="error-message" id="error-message"></p>
+            <button type="submit" class="rounded-button">Login</button>
+            <p class="or-continue-with">Or continue with</p>
+            <div class="social-icons">
+                <i class="fab fa-google"></i>
+                <i class="fab fa-apple"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fi fi-brands-instagram"></i>
+            </div>
+        </form>
+        <p class="signup-link">New to HLHB? <a href="signup.html" id="linkCo">Create an account</a></p>
+    </div>
+</body>
+
+<script src="login.js"></script>
+</html>

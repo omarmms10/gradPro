@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #edc0de, #444434);
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    animation: fadeIn 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+p {
+    font-size: 14px;
+    color: rgb(161, 159, 159);
+}
+.header-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+h2 {
+    display: inline;
+    /* or use display: inline-block; if you want to control the width and height */
+    margin-right: 10px;
+    /* Add some spacing between h2 and h3 */
+}
+
+h3 {
+    display: inline;
+    font-size: 14px;
+    color: rgb(251, 120, 73);
+    /* or use display: inline-block; if you want to control the width and height */
+}
+.account-features-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    width: 100%; /* Adjusted to take the full width on small screens */
+    max-width: 600px;
+    animation: fadeIn 0.5s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    transform: translateY(-20px);
+}
+
+.account-features-container h1 {
+    font-size: 24px;
+    margin: 0 0 20px;
+    animation: slideInDown 0.5s ease-in-out;
+}
+
+.feature {
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.feature ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature ul li {
+    font-size: 14px;
+    margin: 0 0 10px;
+    color: rgb(133, 95, 95);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+li::before {
+    margin-left: 10px;
+    margin-top: -4px;
+    content: "\2022";
+    /* Bullet character code */
+    color: #333;
+    /* Color of the bullet */
+    font-size: 20px;
+    /* Size of the bullet */
+    position: absolute;
+    left: 0;
+}
+
+/* Style for the Skip for now and Start Free Trial buttons */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.skip-button,
+.start-trial-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    /* Added to remove the underline */
+}
+
+.skip-button:hover,
+.start-trial-button:hover {
+    background-color: #f2e3e3;
+}
+
+.skip-button {
+    background-color: #fefbfb;
+    color: #6cc0fc;
+}
+
+.skip-button:hover {
+    background-color: #f2e3e3;
+}
+
+.start-trial-button {
+    background-color: #f86a3e;
+    color: #fff;
+    border: 1px solid #f86a3e;
+}
+
+.start-trial-button i {
+    margin-right: 10px;
+}
+
+.start-trial-button:hover {
+    background-color: #f44336;
+}
+/* Add this to your CSS to style the h1 for mobile screens */
+@media screen and (max-width: 767px) {
+    .account-features-container h1 {
+        font-size: 24px; /* Adjust the font size for mobile screens */
+        margin-top: 100px; /* Add margin to position it properly */
+    }
+}

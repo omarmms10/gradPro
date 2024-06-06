@@ -1,0 +1,323 @@
+body {
+    font-family: sans-serif;
+    background-color: #181A1F;
+    text-align: center;
+    /* Center align text for both mobile and desktop */
+    margin: 0;
+    /* Remove margin for better centering */
+}
+
+/* Add this CSS for the clickable button effect */
+ul li {
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+ul li:hover {
+    background-color: rgb(242, 188, 88);
+    /* Change the background color on hover */
+    color: white;
+    /* Change the text color on hover */
+    transform: translate(0, -5px);
+    /* Add vertical movement on hover */
+}
+
+ul li.selected {
+    background-color: orange;
+    /* Set the background color for the selected item */
+    color: white;
+    /* Set the text color for the selected item */
+}
+
+
+
+/* Add some movement and animation */
+body {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*Mobile*/
+@media (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0 auto 10px;
+        padding: 0;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        max-width: 0px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px 220px 20px 20px;
+    }
+
+    input[type="radio"] {
+        margin-right: 10px;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+    }
+
+    .text {
+        margin-left: 20px;
+    }
+
+    .text h1 {
+        font-size: 17px;
+    }
+
+    .text p {
+        font-size: 13px;
+        width: 0px;
+        white-space: pre-line;
+        color: rgb(217, 211, 211);
+
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+        margin-right: -10px;
+    }
+
+    h1,
+    p {
+        margin: 0;
+    }
+
+    .selected {
+        border: 2px solid rgb(208, 201, 197);
+    }
+
+    .rand {
+        font-size: 13px;
+        color: rgb(220, 209, 209);
+        margin-right: 50px;
+        margin-bottom: 5px;
+        padding: 0;
+
+    }
+
+    .hh {
+        padding-bottom: 10px;
+        margin-right: 20%;
+        font-size: 17px;
+    }
+
+    .rounded-button {
+        align-items: center;
+        background: orange;
+        font-size: 15px;
+        border-radius: 2.5rem;
+        box-sizing: border-box;
+        color: white;
+        display: inline-flex;
+        gap: 0.3em;
+        justify-content: center;
+        height: 2em;
+        padding: 0 1em;
+        position: relative;
+        text-decoration: none;
+        white-space: nowrap;
+        margin-left: 40%;
+    }
+
+    .rounded-button:hover {
+        background-color: rgb(243, 182, 69);
+        /* Change the hover color as desired */
+    }
+
+    button:where(:enabled) {
+        cursor: pointer;
+    }
+
+    .continue-logo {
+        width: 15px;
+        /* Adjust the size of the logo as desired */
+        height: 15px;
+        margin-right: 0px;
+        /* Adjust the spacing between the logo and text */
+    }
+
+    /* Button styles with animation */
+    button {
+        background: orange;
+        padding: 12px 24px;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    button:hover {
+        background: rgb(243, 172, 41);
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+    }
+
+}
+
+/*Desktop*/
+@media (min-width: 769px) {
+    body {
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0 auto 10px;
+        padding: 0;
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        max-width: 600px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px 400px 20px 20px;
+    }
+
+    input[type="radio"] {
+        margin-right: 10px;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+    }
+
+    .text {
+        margin-left: 20px;
+    }
+
+    .text h1 {
+        font-size: 18px;
+    }
+
+    .text p {
+        font-size: 16px;
+        width: 200px;
+        white-space: nowrap;
+        color: rgb(8, 8, 8);
+    }
+
+    img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    h1,
+    p {
+        margin: 0;
+    }
+
+    .selected {
+        border: 2px solid rgba(232, 208, 174, 0.826);
+    }
+
+    .rand {
+        font-size: 19px;
+        color: rgb(4, 4, 4);
+        margin-right: 6%;
+        margin-bottom: 20px;
+        padding: 0;
+
+    }
+
+    .hh {
+        padding-bottom: 10px;
+        margin-right: 20%;
+        font-weight: bolder;
+    }
+
+    .rounded-button {
+        align-items: center;
+        background: orange;
+        font-size: 18px;
+        border-radius: 2.5rem;
+        box-sizing: border-box;
+        color: white;
+        display: inline-flex;
+        gap: 0.3em;
+        justify-content: center;
+        height: 2em;
+        padding: 0 1em;
+        position: relative;
+        text-decoration: none;
+        white-space: nowrap;
+        margin-left: 40%;
+    }
+
+    .rounded-button:hover {
+        background-color: rgb(234, 171, 52);
+        /* Change the hover color as desired */
+    }
+
+    button:where(:enabled) {
+        cursor: pointer;
+    }
+
+    .continue-logo {
+        width: 15px;
+        /* Adjust the size of the logo as desired */
+        height: 15px;
+        margin-right: 0px;
+        /* Adjust the spacing between the logo and text */
+    }
+
+    /* Button styles with animation */
+    #saveChangesBtn {
+        background: orange;
+        padding: 12px 24px;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+        #saveChangesBtn:hover {
+        background: rgb(244, 174, 45);
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+    }
+}

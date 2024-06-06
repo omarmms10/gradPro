@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="profile.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <h1>Tell us about yourself</h1>
+    <p>This information lets us estimate your nutrition requirements for each day.</p>
+    <br>
+
+    <div class="container">
+
+    <form id="profile-form" onsubmit="return validateInputs()">
+        <label>Gender</label>
+        <br>
+        <div id="Genders">
+            <input type="radio" id="maleGender" name="gender" value="male" checked>
+            <label for="maleGender" class="radio-label">Male</label>
+            <input type="radio" id="femaleGender" name="gender" value="female">
+            <label for="femaleGender" class="radio-label">Female</label>
+        </div>
+    
+        <label>Age</label>
+        <input type="number" id="age" min="1" max="70" required>
+    
+        <label>Weight (kg)</label>
+        <input type="number" id="weight" min="10" max="400" required>
+    
+        <label>Height (cm)</label>
+        <input type="number" id="height" min="120" max="400" required>
+    
+        <label>Activity Level</label>
+        <select id="activity">
+            <option value="1.2">Sedentary no exercise</option>
+            <option value="1.375">Lightly Active 1-3 days/week</option>
+            <option value="1.55">Moderately Active 3-5 days/week</option>
+            <option value="1.725">Very Active 6-7 days/week</option>
+            <option value="1.9">Extremely Active Very hard exercise and physical job or training 2x per day</option>
+        </select>
+    
+
+    
+        <label>Body Fat</label>
+        <br>
+        <div id="Fats">
+            <input type="radio" id="lowFat" name="bodyFat" value="Low" checked>
+            <label for="lowFat" class="radio-label">Low</label>
+            <input type="radio" id="mediumFat" name="bodyFat" value="Medium">
+            <label for="mediumFat" class="radio-label">Medium</label>
+            <input type="radio" id="highFat" name="bodyFat" value="High">
+            <label for="highFat" class="radio-label">High</label>
+            <a href="javascript:void(0);" id="toggle-section-fats" class="icon-link">
+                <img src="./imgs/Question_mark-removebg-preview.png" alt="" class="ques-logo">
+            </a>
+        </div>
+        <p id="hidden-paragraph-fats" style="display: none;">Body fat percentage is the total mass of fat divided by total <br> body mass. The typical bodyfat percentage is 18-24% for an <br>
+            average male and 25-31% for an average female according to wikipedia.
+        
+            If you don't know yours it's not a  big deal - we only use it to estimate your lean body mass and change the
+            minimum
+            amount of protein  recommended in the nutrition calculator.</p>
+    
+            <label>Goal</label>
+            <br>
+            <div id="Goals">
+                <input type="radio" id="loseFat" name="goal" value="Lose Fat" checked>
+                <label for="loseFat" class="radio-label">Lose Fat</label>
+                <input type="radio" id="maintainGoal" name="goal" value="Maintain">
+                <label for="maintainGoal" class="radio-label">Maintain</label>
+                <input type="radio" id="buildMuscle" name="goal" value="Build Muscle">
+                <label for="buildMuscle" class="radio-label">Build Muscle</label>
+            </div>
+
+        <p id="error-message" style="color: red;"></p>
+    
+        <button type="submit">Continue</button>
+    </form>
+
+    <div class="image-container">
+        <img id="dynamicImage" src="./imgs/menWomen/man/male-.png" alt="Good Body Image">
+    </div>
+
+    </div>
+ 
+</body>
+<script src="./profileHome.js"></script>
+
+</html>
